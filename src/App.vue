@@ -43,9 +43,32 @@ import { RouterLink, RouterView } from "vue-router";
 
   <RouterView />
 
-<footer>
+<footer class="mt-14">
+  <div>
   <div>
     <img class="flex items-center justify-center w-10 mx-auto" src="/src/assets/Sans titre - 1 2.svg" alt="">
+    <h3 class="font-Title text-black text-3xl text-center mx-auto">Vezeday's</h3>
+  </div>
+  <div>
+    <div>
+      <p>Inscrivez-vous à la newsletter des Vezeday’s pour ne rien louper </p>
+      <div>
+        <form action="#"> 
+          <label for="email"></label>
+          <input type="email" id="email" name="email" placeholder="@ e-mail">
+          <button type="submit">Envoyé</button>
+        </form>
+      </div>
+    </div>
+    <div>
+      <div>
+        <twitter></twitter>
+        <instagram></instagram>
+        <facebook></facebook>
+      </div>
+    </div>
+  </div>
+  <div></div>
   </div>
 </footer>
 </template>
@@ -54,3 +77,16 @@ import { RouterLink, RouterView } from "vue-router";
 @import "@/assets/base.css";
 
 </style>
+
+<script>
+import twitter from "./components/icons/twitter.vue"
+import instagram from "./components/icons/instagram.vue"
+import facebook from "./components/icons/facebook.vue"
+export default {
+  components: {
+    twitter,
+    instagram,
+    facebook
+  }
+}
+</script>
