@@ -29,13 +29,13 @@ import { RouterLink, RouterView } from "vue-router";
   </ul>
 </div>
 <button
-        class="relative z-50 text-xl"
+        class="relative z-50 text-xl lg:hidden"
         aria-haspopup="true"
         aria-controls="menu"
         :aria-expanded="menuOuvert"
         @click="menuOuvert = !menuOuvert"
       >
-       <img src="/src/assets/menu (2) 1.jpg" alt="">
+       <img src="/src/assets/menu (2) 1.svg" alt="">
       </button>
     
     

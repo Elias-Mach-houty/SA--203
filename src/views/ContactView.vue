@@ -34,9 +34,9 @@
             placeholder="Votre Message"></textarea>
 
             <button type="submit" class="bg-bleu w-40 h-12 rounded-md justify-center items-center flex hover:bg-bleu  mx-auto">
-                <p class="font-Corps text-xl text-black">
-                    Envoyer
-                </p>
+                    <p class="font-Corps text-xl text-black">
+                        Envoyer
+                    </p>
             </button>
         </form>
     </div>
