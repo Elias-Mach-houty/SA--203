@@ -9,7 +9,7 @@ import { RouterLink, RouterView } from "vue-router";
     
     <div class="flex items-center text-black mr-6">
       <RouterLink to="/">
-      <img class="w-10 justify-end" src="/src/assets/Sans titre - 1 2.svg" alt="">
+      <img class="w-10 justify-end" src="/src/assets/Sanstitre-12.svg" alt="">
       </RouterLink>
       <RouterLink to="/" class=" font-Title text-5xl ml-4 text-black hover:text-bleu">
           Vezeday's
@@ -35,7 +35,7 @@ import { RouterLink, RouterView } from "vue-router";
         :aria-expanded="menuOuvert"
         @click="menuOuvert = !menuOuvert"
       >
-       <img src="/src/assets/menu (2) 1.svg" alt="">
+       <img src="/src/assets/menu(2)1.svg" alt="">
       </button>
     
     
