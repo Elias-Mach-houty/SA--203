@@ -18,7 +18,7 @@
             <hr class="w-10 border-black my-4 mx-auto">
             <p  class="my-4">DJ Bens - 23 h</p>
         </div>
-        <img class="my-8 mx-auto" src="/src/assets/jardins basilique 1.jpg" alt="">
+        <img class="my-8 mx-auto" src="/src/assets/jardinsbasilique 1.jpg" alt="">
         <p  class="text-center w-3/4 mx-auto text-black"> Le deuxième jour sera au thème du rap avec comme tête d’affiche Nekfeu.</p>
         <div class="mt-8 text-base text-center justify-center text-black">
             <p>La Fève - 17 h</p>

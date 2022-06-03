@@ -6,7 +6,7 @@
 
 
 
-  <img class="justify-items-center mx-auto pt-10 w-3/4" src="/src/assets/Village_de_Vézelay 1.jpg" alt="">
+  <img class="justify-items-center mx-auto pt-10 w-3/4" src="/src/assets/Village_de_Vézelay1.jpg" alt="">
   <Billeterie></Billeterie>
   </div>
   

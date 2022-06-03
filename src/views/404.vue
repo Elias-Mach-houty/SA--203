@@ -1,6 +1,6 @@
 <template>
     <div class="justify-items-center mx-auto">
-        <img class="justify-items-center mx-auto w-40 pt-16" src="/src/assets/Sans titre - 1 2.jpg" alt="">
+        <img class="justify-items-center mx-auto w-40 pt-16" src="/src/assets/Sanstitre-12.jpg" alt="">
         <h2 class=" font-Title text-5xl ml-4 text-black text-center pt-8">Vezeday's</h2>
     </div>
   <div class="grid justify-center">
