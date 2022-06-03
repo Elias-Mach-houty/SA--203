@@ -1,5 +1,5 @@
 <template>
-    <h2 class="font-Title text-black mx-auto text-center text-3xl">Mentions Légales</h2>
+    <h2 class="font-Title text-black mx-auto text-center text-5xl">Mentions Légales</h2>
     <h3 class="font-Title text-black mx-auto text-center text-2xl mt-10">Préambule</h3>
     <p class="font-Corps text-black mx-auto  w-3/4 text-base">Les présentes conditions générales de vente s'appliquent à toutes les prestations de services conclues sur le site Internet Vezeday’s.
 Le site Internet Vezeday’s est un service de :

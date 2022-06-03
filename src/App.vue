@@ -5,34 +5,35 @@ import { RouterLink, RouterView } from "vue-router";
 
 <template>
   <header class="w-full">
-<nav class="flex items-center justify-between w-full bg-teal p-6">
+<nav class="flex items-center justify-between w-full p-6">
     <div class="w-fit ">
-    <div class="flex items-center flex-no-shrink text-black mr-6">
+    <div class="flex items-center text-black mr-6">
       <RouterLink to="/">
-      <img class="w-10" src="/src/assets/Sans titre - 1 2.svg" alt="">
+      <img class="w-10 justify-end" src="/src/assets/Sans titre - 1 2.svg" alt="">
       </RouterLink>
       <RouterLink to="/" class=" font-Title text-5xl ml-4 text-black hover:text-bleu">
           Vezeday's
         </RouterLink>
-    </div>
+    
     <div class="block lg:hidden">
       <button class="flex items-center px-3 py-2  text-teal-lighter border-teal-light hover:text-white hover:border-white">
         <img src="/src/assets/menu (2) 1.jpg" alt="">
       </button>
     </div>
     </div>
-    <div class="w-fit justify-end hidden flex-grow lg:flex items-center hover:text-white">
+    </div>
+    <div class="w-fit justify-end hidden flex-grow lg:flex items-center ">
       <div class="font-Title text-5xl flex flex-row gap-5">
         <RouterLink to="/programmation" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter text-black hover:text-bleu">
           Programmation
         </RouterLink>
-        <RouterLink to="/artistes" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter text-black hover:text-bleu">
+        <RouterLink to="/artistes" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter text-black hover:text-orange">
           Artistes
         </RouterLink>
-        <RouterLink to="/festival" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter text-black hover:text-bleu">
+        <RouterLink to="/festival" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter text-black hover:text-orange">
           Festival
         </RouterLink>
-        <RouterLink to="/contact" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter text-black hover:text-bleu">
+        <RouterLink to="/contact" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter text-black hover:text-rouge">
           Contact
         </RouterLink>
       </div>
@@ -90,6 +91,11 @@ import { RouterLink, RouterView } from "vue-router";
     <RouterLink to="/mentionslegales">
        <p>
         Mentions Légales
+      </p>
+    </RouterLink>
+        <RouterLink to="/styleguide">
+       <p>
+        Guide de style
       </p>
     </RouterLink>
   </div>
