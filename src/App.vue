@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from "vue-router";
 <template>
   <header class="w-full">
 <nav class="flex items-center justify-between w-full p-6">
-    <div class="w-fit ">
+    
     <div class="flex items-center text-black mr-6">
       <RouterLink to="/">
       <img class="w-10 justify-end" src="/src/assets/Sans titre - 1 2.svg" alt="">
@@ -14,14 +14,31 @@ import { RouterLink, RouterView } from "vue-router";
       <RouterLink to="/" class=" font-Title text-5xl ml-4 text-black hover:text-bleu">
           Vezeday's
         </RouterLink>
-    
+    </div>
     <div class="block lg:hidden">
-      <button class="flex items-center px-3 py-2  text-teal-lighter border-teal-light hover:text-white hover:border-white">
-        <img src="/src/assets/menu (2) 1.jpg" alt="">
+
+    </div>
+    <div id="menu"
+  class="fixed inset-0 translate-x-full bg-bleu motion-safe:duration-1000 motion-safe:transition-transform z-50"
+  :class="{ 'translate-x-0': menuOuvert }">
+  <ul class="hiddenjustify-center gap-2 font-Title text-4xl pt-32 text-right pr-14 ">
+    <li class="pt-10"><router-link to="/programmation">Programmation</router-link></li>
+    <li  class="pt-10"><router-link to="/artistes">Artistes</router-link></li>
+    <li class="pt-10"><router-link to="/festival">Festival</router-link></li>
+    <li class="pt-10"><router-link to="/contact">Contact</router-link></li>
+  </ul>
+</div>
+<button
+        class="relative z-50 text-xl"
+        aria-haspopup="true"
+        aria-controls="menu"
+        :aria-expanded="menuOuvert"
+        @click="menuOuvert = !menuOuvert"
+      >
+       <img src="/src/assets/menu (2) 1.jpg" alt="">
       </button>
-    </div>
-    </div>
-    </div>
+    
+    
     <div class="w-fit justify-end hidden flex-grow lg:flex items-center ">
       <div class="font-Title text-5xl flex flex-row gap-5">
         <RouterLink to="/programmation" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter text-black hover:text-bleu">
@@ -74,27 +91,27 @@ import { RouterLink, RouterView } from "vue-router";
   </div>
   <div class="flex justify-evenly w-2/4 font-Corps text-black mb-5">
     <RouterLink to="/programmation">
-      <p>
+      <p class="hover:text-bleu">
         Programmation
       </p>
     </RouterLink>
     <RouterLink to="/festival">
-       <p>
+       <p class="hover:text-bleu">
         Festival
       </p>
     </RouterLink>
     <RouterLink to="/contact">
-       <p>
+       <p class="hover:text-bleu">
         Contact
       </p>
     </RouterLink>
     <RouterLink to="/mentionslegales">
-       <p>
+       <p class="hover:text-bleu">
         Mentions Légales
       </p>
     </RouterLink>
         <RouterLink to="/styleguide">
-       <p>
+       <p class="hover:text-bleu">
         Guide de style
       </p>
     </RouterLink>
@@ -117,6 +134,21 @@ export default {
     twitter,
     instagram,
     facebook
-  }
+  },
+   name: "App",
+  data() {
+    return {
+      menuOuvert: false,
+    };
+  },
+  name: "App",
+  data() {
+    return {
+      menuOuvert: false,
+    };
+  },
+  beforeMount() {
+    this.$router.afterEach(() => (this.menuOuvert = false));
+  },
 }
 </script>
