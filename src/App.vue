@@ -64,7 +64,7 @@ import { RouterLink, RouterView } from "vue-router";
 <footer class="mt-14">
   <div class="flex flex-col items-center">
   <div>
-    <img class="flex items-center justify-center w-10 mx-auto" src="/src/assets/Sans titre - 1 2.svg" alt="">
+    <img class="flex items-center justify-center w-10 mx-auto" src="/src/assets/Sanstitre-12.svg" alt="">
     <h3 class="font-Title text-black text-3xl text-center mx-auto">Vezeday's</h3>
   </div>
   <div class="flex justify-around flex-col items-center sm:flex-row w-8/12 mt-5 mb-5">
