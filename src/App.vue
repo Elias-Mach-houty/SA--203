@@ -21,7 +21,7 @@ import { RouterLink, RouterView } from "vue-router";
     <div id="menu"
   class="fixed inset-0 translate-x-full bg-bleu motion-safe:duration-1000 motion-safe:transition-transform z-50"
   :class="{ 'translate-x-0': menuOuvert }">
-  <ul class="hiddenjustify-center gap-2 font-Title text-4xl pt-32 text-right pr-14 ">
+  <ul class="hiddenjustify-center gap-2 font-Title text-5xl pt-32 text-right pr-14 text-black ">
     <li class="pt-10"><router-link to="/programmation">Programmation</router-link></li>
     <li  class="pt-10"><router-link to="/artistes">Artistes</router-link></li>
     <li class="pt-10"><router-link to="/festival">Festival</router-link></li>

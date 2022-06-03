@@ -8,6 +8,7 @@ import BobView from '../views/BobView.vue'
 import MentionsLegalesView from '../views/MentionsLegalesView.vue'
 import StyleguideView from '../views/StyleguideView.vue'
 import page404 from '../views/404.vue'
+import CatView from '../views/CatView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,7 +21,9 @@ const router = createRouter({
     { path: '/bob',          name: 'BobView',            component: BobView  },
     { path: '/mentionslegales', name: 'MentionsLegalesView', component: MentionsLegalesView },
     { path: '/styleguide', name: 'StyleguideView', component: StyleguideView },
-    { path: '/:pathMatch(.*)*', name: '404' , component: page404}
+    {  path: '/cat', name: 'cat' , component: CatView},
+    { path: '/:pathMatch(.*)*', name: '404' , component: page404},
+
   ]
 })
 
