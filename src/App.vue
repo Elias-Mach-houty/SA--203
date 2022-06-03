@@ -44,31 +44,55 @@ import { RouterLink, RouterView } from "vue-router";
   <RouterView />
 
 <footer class="mt-14">
-  <div>
+  <div class="flex flex-col items-center">
   <div>
     <img class="flex items-center justify-center w-10 mx-auto" src="/src/assets/Sans titre - 1 2.svg" alt="">
     <h3 class="font-Title text-black text-3xl text-center mx-auto">Vezeday's</h3>
   </div>
-  <div>
-    <div>
-      <p>Inscrivez-vous à la newsletter des Vezeday’s pour ne rien louper </p>
+  <div class="flex justify-around flex-col items-center sm:flex-row w-8/12 mt-5 mb-5">
+    <div class="flex flex-col items-center">
+      <p class="w-60 text-bleu font-Corps text-center mb-3">Inscrivez-vous à la newsletter des Vezeday’s pour ne rien louper </p>
       <div>
         <form action="#"> 
           <label for="email"></label>
-          <input type="email" id="email" name="email" placeholder="@ e-mail">
-          <button type="submit">Envoyé</button>
+          <input type="email" id="email" name="email" placeholder="@ e-mail" class="border-2 border-black rounded-md text-black font-Corps">
+          <button type="submit" class="w-28 bg-bleu rounded-md text-black font-Corps p-1 mx-2">Envoyé</button>
         </form>
       </div>
     </div>
-    <div>
-      <div>
+    <div class="flex flex-col items-center">
+      <div class="flex justify-between w-32 mb-3">
         <twitter></twitter>
         <instagram></instagram>
         <facebook></facebook>
       </div>
+      <p class="font-Corps text-black text-center">
+        Retrouvez nous sur nos réseaux sociaux
+      </p>
     </div>
   </div>
-  <div></div>
+  <div class="flex justify-evenly w-2/4 font-Corps text-black mb-5">
+    <RouterLink to="/programmation">
+      <p>
+        Programmation
+      </p>
+    </RouterLink>
+    <RouterLink to="/festival">
+       <p>
+        Festival
+      </p>
+    </RouterLink>
+    <RouterLink to="/contact">
+       <p>
+        Contact
+      </p>
+    </RouterLink>
+    <RouterLink to="/mentionslegales">
+       <p>
+        Mentions Légales
+      </p>
+    </RouterLink>
+  </div>
   </div>
 </footer>
 </template>
